@@ -1,0 +1,41 @@
+Description of our project. [KnackHub]
+
+1) Idea brief : 
+
+It makes education easy, interesting and rewarding at the same time.
+We often see that students share their notes and innovative tricks with their friends and 
+known people without any second thought. So, we thought of creating a platform where learners can 
+share their work to a wider audience and can get rewarded for their hard work.
+This will encourage students to work hard and their notes and ideas will reach a wider audience 
+who can use them fir their betterment.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2) What positive and unique solutions your idea have? :
+
+Users can upload even a single image, video or pdf and can be rewarded for it.
+Users can search though specific topics through search bar and bookmark the posts which they like for further use.
+There is an open chat where users can ask or answer questions.
+Every post has comment and report option.
+Easy to use and attractive UI with one tap sign in option will attract more and more learners.
+The app is completely free for users.
+All these things will help the people who want to learn something and will reward people who even
+ have a single idea or self made notes, who, without this app would have just shared them for free.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+To run this project, run following commands :
+
+Clone the repository :
+"git clone https://github.com/Udit-singh/SVPCET-Hackathon-TechGeeks-3.git"
+
+Move to the desired folder :
+cd KnackHub/
+
+Set up your Flutter Sdk and Android Studio or Xcode Environment in that folder.
+
+To get all Dependencies :
+flutter pub get
+
+Run the app on Virtual Device or on Physical Device using debugger mode :
+flutter run
