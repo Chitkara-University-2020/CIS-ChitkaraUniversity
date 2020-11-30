@@ -1,0 +1,37 @@
+Project Name: Class Companion
+
+Description:
+A service using which students can easily make notes while attending online classes without the hassle of switching tabs or windows.
+The meeting/video can be viewed in a frame inside the page and users can create, edit & view their notes on the same page. This helps in saving student's time and reduces confusion as they can just create & write notes on the same page without switching tabs or applications.
+
+Presentation (in PDF format with video as a link):
+Byte Coder-IncubatedInd-Presentation.pdf [in this folder]
+
+Presentation on Google Slides (with animations & video): [RECOMMENDED]
+https://docs.google.com/presentation/d/1i28jYgsxB_bwlH8ez8rMaje-F8zraQAQm6kVWU1aVp0/edit?usp=sharing
+
+Steps to host the project on localhost:
+1. Download and install Python 3.6 or above (https://www.python.org/downloads/).
+2. Install flask library using the command `pip install flask`.
+3. Run the file "host_localhost.py".
+4. Navigate to "http://localhost" and you'll see the project live.
+
+The Project can also be viewed live at: https://classcompanion.us.to/
+
+Contents of project directory:
+./Byte Coder-ClassCompanion-IncubatedInd-Presentation.pdf -> Presentation in PDF format.
+./ClassCompanion
+    /host_localhost.py -> Code to host the project on localhost.
+    /host.py -> Code to host the project in production with nginx.
+    /index.html -> Main page of the website.
+    /local.db -> SQLite3 Database for "host_localhost.py" for testing locally.
+    /resources
+        /css
+            /style.css -> For styling of index.html page.
+        /img
+            /logo.png -> Favicon logo for the image.
+        /js
+            /index.js -> For managing the buttons, requests and layout of index.html page.
+./description.txt -> Description of the Project.
+./description.md -> Description of the Project in MarkDown Format.
+./README.md -> Project Description for GitHub Repository.
