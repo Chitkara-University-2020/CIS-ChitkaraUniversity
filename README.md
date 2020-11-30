@@ -1,29 +1,83 @@
-# CIS - Chitkara University
-Code Innovation Series powered by GitHub
-Project Submission for CIS - Chitkara University.
+<a href="https://icons8.com/icon/13441/python"></a>
+<a href="https://icons8.com/icon/74402/mongodb"></a>
 
-## Submission Procedure
-Read the following steps and guidelines properly for proper submission of your project. Missing out any step or performing it wrongly can lead to unsuccessful submission. 
+# CodeInnovationSeries-Hackathon-Py_Chasers
 
-### Step 1
-#### Fork this repository
+Project under Code Innovation Series Virtual Hackathon.
 
-### Step 2
-#### Create a New Folder within the forked repository, with the 'folder name' being your 'Team Name'
+Team Members:
+1. Chirag Jain
+2. Bhuvan Kohli
+3. Bhawna
+4. Chestha Goyal
 
-## Contents of the folder
-+ The project directory.
-+ The presentation that you will be presenting while presenting your project before the judges.
-+ A text file that contains proper documentation. The documentation should contain:
-    - A description of your project.
-    - The contents of your project directory.
-    - Ways to host your project on the localhost.
-+ The name of the 'pptx' and 'text' files should also be the 'team name'.
+## Problem Statement
 
-### People with only hardware solution are required to submit only the 'pptx' and 'text' files. A link to the video demonstration of your working model should also be included in both the files.
+<b>Education</b>
+
+Create solutions to deal with these challenges faced by the users:
+
+1. Transforming learning into Amazing e-learning Experiences.
+
+2. Lack Of Learner Motivation And Engagement.
+
+3. Staying Up-To-Date With Modern Tech.
+
+4. Designing e-learning Courses For Different Generations.
+
+5. Measurable learning outcomes.
+
+6. Adaptive learner models to accommodate different learner needs.
+
+## Solution
+We suggest a solution by making an desktop application for a wide range of people be it a Student,Job Professional, Educator,Recruiter.
+The UI of the application is made to suit people of all ages which makes the E learning experience fun.
+
+There are daily quizes for the topics of a wide range of Tech Stacks to choose from which are up to date with the modern technologies and are also relevant to the questions asked in the interviews of the major MNC's. This helps the students to tackle lack of learner motivation and the progress of these quizes is duly noted and helps the recruiters to filter the best of the best for the post. The daily quizes are open for a person to attempt at any time at his/her speed,this learner model is such that it accommodates different learner needs and helps one to learn at their own speed. People can apply for jobs by searching in their relevant field.Recruiters can also post jobs for a particular post.  
+
+The application also has a smooth one time sign up and sign in feature with **MD5 password hashing** which ensures the security of the Password being entered.Moreover, the user also gets an automated email whenever he or she registers in the app for the first time.
+
+## Project Description
+
+![logo](https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/Logo-EduTech.png)
+
+This is an desktop application for a wide range of people be it a Student,Job Professional, Educator,Recruiter. The UI of the application is made to suit people of all ages which makes the E learning experience fun.
+
+We know that in every other educational website or something, they promotes only their content. And if the user searches for free content on the Google there is a lot of variety availaible which confuses the user to what to do and from where to do.
+
+Thus, one of the most admirable feature of the application is that it provides the suggestions to the content available over the internet, which is the best out of the best  without any promotion of one website or channel. We provide the best and reliable content which is present on the internet and from where our user can directly learn what he wants to do, without any sort of confusion.
 
 
-### Step 3
-Create a Pull Request only after you have completed the entire project and do not wish to make any further changes. We will not be accepting more than one Pull Request from any team. \
-\
-You can complete your work on the local machine and then upload your project folder in the forked repository and proceed to create a Pull Request.
+
+## Tech-Stack Used
+
+Python ![python](https://img.icons8.com/color/50/000000/python.png)
+
+Tkinter <img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/tkinter-logo.jpg" width=10% height=10% alt=tkinter>
+
+MongoDB ![mongodb](https://img.icons8.com/color/48/000000/mongodb.png)
+
+
+<details><summary><b>Preview of the App!<b></summary>
+<p>
+  
+  <p>
+
+
+
+</p>
+
+<img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/signup-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/signin-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/register%20-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/jobfinder-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/resourcefinder-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/quiz-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/profilepage-ss.png" width="30%">
+
+</p>
+</details>
+
+## PPT Link
+
+
+
+## To run this project
+
+> Download EduTech.exe from the repository
+
+> Run it
