@@ -1,0 +1,46 @@
+Problem Statement:
+1. Enabling a patient-centered information exchange system.
+2. Personal medical assistant.
+
+Solution:
+
+Mother's Love - Securing the Mothers :
+
+Team - The Innovators have come up with an idea for securing the health of would-be mothers.Mom's Love is a website designed particularly for pregnant ladies which would provide them 
+the solutions to the every problem faced by a lady in that difficult and exciting period of her life.
+
+For women of childbearing age, paying attention to their health is very important not only prior to getting pregnant,but also during their pregnancy."SECURING THE MOTHERS" is a portal which
+is planned in such a manner that it serves as a "PERSONAL PHYSICIAN" for to-be-mothers.
+
+Services included in the Website are:
+1. Consult a Gynecologist.
+2. Fit Pregnancy.
+3. Mental Peace.
+4. Ask your Diet.
+5. Emergency Helpline.
+
+To avail the uplisted Services user needs to get herself registered on the portal.By logging in the Account user can book any of the services provided.All services can be availed online as
+ well as offline, as online services are much required by a large section of women.Website also provides a "24 hour FREE EMERGENCY HELPLINE" , (the emergency can arise anytime).
+User Account will also store all the information regarding  the "Payment Details" and "Medical History" , which can be of help to calcualte the whole expenses as well as maintaing all the 
+Medical records for future references.
+
+The prototype of the Website is hosted on Github.
+The link to Website is :
+"https://komal-412.github.io/"
+
+At present the Website does not have any database and the servies cannot be availed .The backend is still in progress.But you can see the prototype on the above mentioned link.
+
+Tech Stack used:
+1. Html
+2. CSS
+3. Javacript
+4. JQuery
+5. Bootstrap
+
+Team - The Innovators.
+Mother's Love - Securing the Mothers.
+Created by:
+Komal Sharma(CSE,second year,CUIET).
+Aprajita(CSE,second year,CUIET).
+Ayushi Gupta(CSE,first year,CUIET).
+Abhinav(CSE,first year,CUIET).
