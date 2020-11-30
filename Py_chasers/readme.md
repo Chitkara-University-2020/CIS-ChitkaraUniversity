@@ -39,8 +39,7 @@ The application also has a smooth one time sign up and sign in feature with **MD
 
 ## Project Description
 
-![logo](https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/Logo-EduTech.png)
+![logo](https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/Logo-EduTech.png)
 
 This is an desktop application for a wide range of people be it a Student,Job Professional, Educator,Recruiter. The UI of the application is made to suit people of all ages which makes the E learning experience fun.
 
@@ -54,7 +53,7 @@ Thus, one of the most admirable feature of the application is that it provides t
 
 Python ![python](https://img.icons8.com/color/50/000000/python.png)
 
-Tkinter <img src="https://github.com/CoderChirag/CodeInnovationSeries-Hackathon-Py_Chasers/blob/main/images/tkinter-logo.jpg" width=10% height=10% alt=tkinter>
+Tkinter <img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/tkinter-logo.jpg" width=10% height=10% alt=tkinter>
 
 MongoDB ![mongodb](https://img.icons8.com/color/48/000000/mongodb.png)
 
@@ -68,14 +67,7 @@ MongoDB ![mongodb](https://img.icons8.com/color/48/000000/mongodb.png)
 
 </p>
 
-<img src="https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/signup-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/signin-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/register%20-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/jobfinder-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/resourcefinder-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/quiz-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/
-Code-Innovation-Series-ChitkaraUniversity/Py_Chasers/blob/main/images/profilepage-ss.png" width="30%">
+<img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/signup-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/signin-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/register%20-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/jobfinder-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/resourcefinder-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/quiz-ss.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderChirag/Code-Innovation-Series-ChitkaraUniversity/blob/main/Py_chasers/images/profilepage-ss.png" width="30%">
 
 </p>
 </details>
