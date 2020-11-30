@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	table {
+	  widtd:100%;
+	}
+	table, td, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	}
+	td, td {
+	  padding: 15px;
+	  text-align: left;
+	}
+	#t01 tr:ntd-child(even) {
+	  background-color: #eee;
+	}
+	#t01 tr:ntd-child(odd) {
+	 background-color: #fff;
+	}
+	#t01 td {
+	  background-color: Grey;
+	  color: white;
+	}
+	.button {
+	  position: relative;
+	  background-color:Black;
+	  border: none;
+	  font-size: 15px;
+	  color: #FFFFFF;
+	  padding: 10px;
+	  width: 300px;
+	  text-align: center;
+	  transition-duration: 0.4s;
+	  text-decoration: none;
+	  overflow: hidden;
+	  cursor: pointer;
+	}
+
+	.button:after {
+	  content: "";
+	  background: #f1f1f1;
+	  display: block;
+	  position: absolute;
+	  padding-top: 200%;
+	  padding-left: 250%;
+	  margin-left: -20px !important;
+	  margin-top: -120%;
+	  opacity: 0;
+	  transition: all 0.8s
+	}
+
+	.button:active:after {
+	  padding: 0;
+	  margin: 0;
+	  opacity: 1;
+	  transition: 0s
+	}
+</style>
+</head>
+<body>
+<form>
+<table id="t01">
+	<tr colspan=3>
+    <td>Date </td>
+	<td>
+	<form action="/action_page.php">
+	<label for="select">Select:</label>
+	<input type="date" id="time" name="time">
+	</form>
+	</td>
+	</tr>
+	<tr>
+    <td>Total Steps</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>Calorie Burned</td> 
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>BP</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>Pulse rate</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>Sugar level</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>Sleep Taken</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>Menstural Cycle</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>Body Temperature</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+    <td>SpO2</td>
+	<td><Input type="Text"></td>
+	</tr>
+	<tr>
+	<td colspan=3><center><button class="button" style="vertical-align:middle">Submit Entry</center></button></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

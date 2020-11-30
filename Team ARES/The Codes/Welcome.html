@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html style="background-color:grey">
+<head>
+<style>
+.button {
+  position: relative;
+  background-color:Black;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 200%;
+  padding-left: 250%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+</style>
+<title>ARES</title>
+</head>
+<body >
+<a href="Base!.html"><button class="button" style="vertical-align:middle">Click To add New Entry</button></a>
+<button class="button" style="vertical-align:middle">Click to View of a Specific Date </button>
+</form>
+<br>
+<H2><u>Notifications</u></H2>
+<OL>
+<li>Notification 1</li>
+<li>Notification 2</li>
+<li>Notification 3</li>
+<li>Notification 4</li>
+</OL>
+<footer>
+<p><A href="CONTACT US.html">ABOUT US</A></p>
+</footer>
+</body>
+</html>
