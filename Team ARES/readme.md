@@ -4,4 +4,4 @@ We were a team with 3 Members
 1) Piyush Kumar
 2) Samridhi Goyal
 3) Shubhanshu Bharti
-The File in where the code is utilized is // MAIN FILE.HTML
+The File in where the code is utilized is /The Codes/ MAIN FILE.HTML
