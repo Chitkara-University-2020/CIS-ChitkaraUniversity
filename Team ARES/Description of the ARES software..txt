@@ -1,0 +1,56 @@
+
+Description
+
+We have often found in our lives that keeping record of a aptient's Health Stats is a hard task.
+And the doctors often look forward to it during the assessment of a patient.
+This Particular program will help the people to keep the data of them or the patient.
+In a sorted and formatted order with a great look and insight of the vital of one self.
+The following app would help the users to manage the data of one patient in a tabular manner.
+taking away the hassle of keeping a notebook for the vital management. 
+Hence it would help in easier management with deeper vision,
+It would also lower the high amount of paper being used.
+
+ 
+Contents
+
+1)MAIN FILE.HTML=> It is a Frameset operated file in which the user and the viewer would be working to look and store the data 
+
+2)BASE!.html => It is a form used to recieve data from the user in a form based system
+
+3)GUIDE.html => It is a file which is used for navigating into different menus of the site and having a good look over them. 
+
+4)TitleWrite.html => It is used as a tiltle for the main page and has the logo and name of the project in it.
+
+5)Welcome.html => it is the Welcome Page in which the window would begin when you first enter in and is also the home menu for the code.
+
+6)CONTACT US.html => Has Info about the contributers and team members involved in this project.
+
+7) Logo.png=> Logo of our Team (Credits :- Samridhi Goyal)
+
+8) Cals :- Used for Displaying data regarding Calsand is linked with the buttons in the guide menu
+
+9) BP	:- Used for Displaying data regarding BP and is linked with the buttons in the guide menu
+
+10) Bodytemp :- Used for Displaying data regarding Body Temperature and is linked with the buttons in the guide menu
+
+11) Sleep Cycle :- Used for Displaying data regarding Sleep Recordsand is linked with the buttons in the guide menu
+
+12) Spo2 :- Used for Displaying data regarding Blood Oxygen Level and is linked with the buttons in the guide menu
+
+13) Steps :- Used for Displaying data regarding Steps Walked and is linked with the buttons in the guide menu
+
+14) Sugar :- Used for Displaying data regarding Blood Sugar Level and is linked with the buttons in the guide menu
+
+15) Pulse Rate :- Used for Displaying data regarding Pulse Rate and is linked with the buttons in the guide menu
+
+16) Menstural Cycle :- Used for Displaying data regarding Menstural Cycle (If Woman) and is linked with the buttons in the guide menu
+
+
+Ways to Host 
+
+The user will just need all the necessary files of codes and a internet browser to work with this setup as it is easy to use and well Built 
+while keeping in mind about the people with slow or no Internet connectivity at times, It is and Offline Based Module.
+To run this 
+Click on the "MAIN FILE.HTML" to run and use the following software.
+
+ 
