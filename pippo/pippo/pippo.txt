@@ -1,0 +1,233 @@
+################ MEDDOC DOCUMENTATION #################
+#######################################################
+
+#################### Description ######################
+
+In this Hospital management system any hospital can register and they will get a website of their hospital data of which like departments
+of their hospital, data of doctors, data of patients they are having, their tagline and much more they can edit according to their needs. 
+Patients can search for the hospital from whose doctor they want an appointment and can select the symptoms they are suffering from. Those
+symptoms can be added Or removed accordingly by the hospital itself as the access has been given to them. 
+Doctors of particular hospital are having their accounts over the site of hospital so that they can check their appointment requests thier
+profile they can edit. 
+In a nutshell our system trying to provide a service with which the data of all the hospitals can be managed and patients are able to get 
+appointment from whichever hospital they want and contact the doctor of any department without physically being present their.
+
+################## OUR IDEA ##########################
+
+ > Our idea aims to provide easy virtual access to patients to all the hospitals present in India. Using our web application, patients can 
+   book appointments according to time slots available and get medical records virtually, to which they can access anytime,anywhere in the 
+   world by just logging into their account,this eliminates the need of carrying and managing physical copies of reports and prescriptions.
+   Moreover,this also reduces the effort to physically going to the hospital and waiting in long queues for your turn.
+   Our idea manages and saves time and efforts of the people in the medical industry.
+
+ > Our idea is unique as their is no existing system in implementation that takes the current exhaustive system of managing data of 
+   patients and booking appointments completely online. The thing that makes our idea more unique is that we provide one portal that gives
+   access to all hospitals so that with patient's consent, their personal data can be shared between hospitals with a click of a button 
+   eliminating the need of exchanging physical reports and prescriptions by 100%.
+################### TECH STACK #########################
+
+WAMP Stack(Windows, Apache, MySQL, PHP)
+HTML, CSS, JS, Bootstrap 
+
+################### Project Directory ##################
+
+pippo
+│   pippo.pptx
+│   pippo.txt
+│
+└───pippo
+    │   pippo.sql
+    │
+    └───MedDoc
+        │   admin-page.php
+        │   doctor-data.php
+        │   doctor-page.php
+        │   doctor-profile.php
+        │   editable-page.php
+        │   hospital.php
+        │   index.php
+        │   patient-data.php
+        │   patient-page.php
+        │   patient-profile.php
+        │   README.md
+        │
+        ├───CSS
+        │       login.css
+        │       owl.carousel.min.css
+        │       owl.theme.default.min.css
+        │       style.css
+        │
+        ├───Images
+        │       24-hours.png
+        │       admin-anatomy.jpg
+        │       admin-page1.jpg
+        │       admin-page2.jpg
+        │       admin-page3.jpg
+        │       administrator.jpg
+        │       ambulance.png
+        │       anatomy.jpg
+        │       background.jpg
+        │       child.png
+        │       close.png
+        │       dental-checkup.png
+        │       digitally-equiped.jpg
+        │       doctor_profile.png
+        │       doctor_profile_S.png
+        │       eye.png
+        │       footer-img.png
+        │       heart-fake.jpg
+        │       heart-study.jpg
+        │       heart.png
+        │       Human-heart.jpg
+        │       intestine.png
+        │       kidneys.png
+        │       knee.png
+        │       logo.png
+        │       logo1.jpg
+        │       lungs.png
+        │       medical-folder.png
+        │       menu.png
+        │       patient_profile.png
+        │       patient_profile_S.png
+        │       skull.jpg
+        │       stethoscope.png
+        │       testimonial.png
+        │       thinking.png
+        │       user.png
+        │       versatility.jpg
+        │
+        ├───includes
+        │       common.php
+        │       header.php
+        │       logout.php
+        │
+        ├───js
+        │       owl.carousel.js
+        │       owl.carousel.min.js
+        │
+        ├───Login
+        │       add-a-doctor-script.php
+        │       admin-login-script.php
+        │       doctor-login-script.php
+        │       hospital-signup.php
+        │       patient-login-script.php
+        │       patient-signup-script.php
+        │
+        ├───scripts
+        │       add-about-us.php
+        │       add-counter-data.php
+        │       add-qualifications.php
+        │       add-social-links.php
+        │       add-tagline.php
+        │       add-testimonial.php
+        │       approve_request.php
+        │       decline_request.php
+        │       edit-patient-profile.php
+        │       request-appointment.php
+        │       suggest-doctors.php
+        │
+        └───storage
+                3TestHospital1.pdf
+                4TestHospital2.pdf
+
+################## Hosting on Localhost ################
+
+> Install latest version of wamp server from "https://wampserver-64bit.en.softonic.com/"
+> Clone folder 'MedDoc' present inside folder 'pippo' into "C:\wamp64\www"
+> Start wamp server from desktop icon and open localhost/phpmyadmin in browser
+> Enter username "root" and leave password blank and login
+> Create database "meddoc","3testhospital1","4testhospital2" and import sql file "pippo.mysql" present inside pippo folder
+> On the browser open localhost/MedDoc, and the project will be ready to run
+
+
+################## Sample Acounts ########################
+
+Test Hospital 1
+Admin: 	test1@gmail.com
+	111111
+Doctor: testdoc@gmail.com
+	1990-01-01
+Doctor: testdoc1@gmail.com
+	1990-01-01
+Doctor: testdoc2@gmail.com
+	1990-01-01
+Doctor: testdoc3@gmail.com
+	1990-01-01
+Doctor: testdoc4@gmail.com
+	1990-01-01
+Doctor: testdoc5@gmail.com
+	1990-01-01
+Doctor: testdoc6@gmail.com
+	1990-01-01
+Doctor: testdoc7@gmail.com
+	1990-01-01
+Doctor: testdoc8@gmail.com
+	1990-01-01
+
+
+
+
+
+
+
+
+Test Hospital 2
+Admin: 	test2@gmail.com
+	111111
+
+
+
+MEDDOC
+Patient: 9876543210
+	     111111
+
+
+
+
+
+################## HOW TO TEST OUR PROJECT ? #######################
+
+AS A PATIENT:
+  > At the home page select the hospital (2 hospitals have been added for testing already)
+  > You will reach to the Home page of the hospital. There login as patient using testing ID's given above .
+  > Select the symptoms and the system will suggest itself which doctor of which department you can consult.
+  > There then as a patient you can make an appointment by filling the form.
+  > Your appointment status will be visible to you there only.
+  > Patient is having an access to edit their profile.
+
+AS A DOCTOR:
+  > At the home page select the hospital (2 hospitals have been added for testing already)
+  > You will reach to the Home page of the hospital. There login as doctor using testing ID's given above . 
+  > There you can see the appointment requests of the patients along with whole data of patient and symptoms they have selected.
+  > Approve or Decline the appointment request (The request status will be updated at the patient's profile).
+  > Doctor is having an access to edit their profile (like qualification updates etc).
+
+AS A HOSPITAL ADMIN: (Hospital admin is the one who can handle the HOME PAGE of there hospital according to needs like departments, 
+symptoms, data of doctors , data of patients etc)
+  > At the home page select the hospital (2 hospitals have been added for testing already)
+  > You will reach to the Home page of the hospital. There login as admin using testing ID's given above .
+  > As an admin , new doctor can be added (ADD A DOCTOR).
+  > Edit your home page and changes will be made (EDIT YOUR HOME PAGE)
+  > View data of patients(DATA OF PATIENTS) and data of Doctors(DATA OF DOCTORS) at the hospital.
+
+################## Video Link #########################
+
+https://drive.google.com/file/d/1kys_tHZSMI_1lEtR8wi1l9G8JyEtk3SL/view?usp=sharing
+
+###################### Our Team #######################
+
+> Paras Chaudhary
+  Email: paras1638.cse19@chitkara.edu.in
+
+> Aarchie Girdhar
+  Email: aarchie0235.cse19@chitkara.edu.in
+  
+> Divyanshi Bajpai
+  Email: divyanshi0278.cse19@chitkara.edu.in
+
+> Shaurya Kaushal
+  Email: shaurya0237.cse19@chitkara.edu.in 
+
+
+
+
