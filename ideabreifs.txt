@@ -1,0 +1,17 @@
+problem statement: Education
+Our idea briefs: Our idea is related to E-learning, We are making an app for E-learning(name-Mindificent).
+ Mobile apps for educational institutions have done a great thing for the students, making the learning process fun and easy. Also,
+ the various app features to boost engagement through knowledge-oriented activities. In these changing times, students are more driven
+ towards using a mobile phone for every purpose. A smartphone they call it. The world is at the fingertips and a student can get access 
+to any information from anywhere. This reduces the chance of visiting a library and searching for the data. A mobile phone hence can be 
+used for a number of such purposes. What makes the information easily available is mobile applications. Every mobile app has a unique feature
+ that offers its own set of services. Mindificent is designed with the motive of helping students to get every information required for their
+ academic as well as extra information in a manner that the students.
+
+Ways to host your project on the localhost: -1 Using Node.js
+
+2> In CMD, run the command npm install http-server -g
+
+3> Navigate to the specific path of your file folder in CMD and run the command http-server
+
+4> Go to your browser and type localhost:8080. Your Application should run there.
