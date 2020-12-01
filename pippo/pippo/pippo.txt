@@ -147,15 +147,42 @@ Admin: 	test1@gmail.com
 	111111
 Doctor: testdoc@gmail.com
 	1990-01-01
+Doctor: testdoc1@gmail.com
+	1990-01-01
+Doctor: testdoc2@gmail.com
+	1990-01-01
+Doctor: testdoc3@gmail.com
+	1990-01-01
+Doctor: testdoc4@gmail.com
+	1990-01-01
+Doctor: testdoc5@gmail.com
+	1990-01-01
+Doctor: testdoc6@gmail.com
+	1990-01-01
+Doctor: testdoc7@gmail.com
+	1990-01-01
+Doctor: testdoc8@gmail.com
+	1990-01-01
+
+
+
+
+
+
+
 
 Test Hospital 2
 Admin: 	test2@gmail.com
 	111111
-Doctor: testdoc2@gmail.com
-	1990-01-01
 
+
+
+MEDDOC
 Patient: 9876543210
 	     111111
+
+
+
 
 
 ################## HOW TO TEST OUR PROJECT ? #######################
