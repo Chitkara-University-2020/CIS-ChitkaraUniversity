@@ -179,16 +179,16 @@ $conn = mysqli_connect($servername, $serverusername, $serverpassword,$_SESSION['
           </div>
         </div> -->
         <br><br>
-        <form action="edits/request-appointment.php" method="POST">
         <strong><h2 style="color: #8bcdcd">SELECT YOUR SYMPTOMS</h2></strong>
         <div class="row" style="font-size: 20px; margin-left: -41.5rem;">
           <div class="col-sm-8">
             <div class="container-fluid h-100 bg-light text-dark">
               <br>
+              <form action="#" method="POST">
               <div class="row justify-content-center align-items-center h-100">
                   <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
                       <div class="form-group">
-                          <select class="mul-select" multiple="true" name="symptoms">
+                          <select class="mul-select" multiple="true" name="symptoms[]">
                           <?php
                               $query = "SELECT * FROM symptoms";
                               $result = mysqli_query($conn, $query);
@@ -198,9 +198,13 @@ $conn = mysqli_connect($servername, $serverusername, $serverpassword,$_SESSION['
                                 <option value="<?php echo $row['id']; ?>"><?php echo $row['symptom']; ?></option>  
                               <?php } ?>  
                           </select>
+                          <br><br>
+                          <button type="submit" class="btn btn-default btn-lg text-center" style="background-color: #8bcdcd; color: white; font-size: 20px; margin-left: 50rem;">Suggest Doctors</button>
                       </div> 
                  </div>
               </div>
+              
+              </form>
           </div>
           </div>
         </div>
@@ -211,6 +215,7 @@ $conn = mysqli_connect($servername, $serverusername, $serverpassword,$_SESSION['
             <input type="text" class="form-control" name="message">
           </div>
         </div><br><br><br> -->
+        <form action="#" method="post">
         <div class="row" style="font-size: 20px;">
           <div class="col-sm-4"><label for="datetime"><p>You want to schedule your appointment on :</p></label></div>
           <div class="col-sm-8">
