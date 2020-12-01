@@ -1,32 +1,92 @@
-<?php 
+ <?php 
 require "includes/common.php";
 $page="index.php"; 
+if(!isset($_GET['patient_signup_name_error']))
+$_GET['patient_signup_name_error']=NULL;
+
+if(!isset($_GET['patient_signup_email_error']))
+$_GET['patient_signup_email_error']=NULL;
+
+if(!isset($_GET['patient_signup_gender_error']))
+$_GET['patient_signup_gender_error']=NULL;
+
+if(!isset($_GET['patient_signup_dob_error']))
+$_GET['patient_signup_dob_error']=NULL;
+
+if(!isset($_GET['patient_signup_contact_error']))
+$_GET['patient_signup_contact_error']=NULL;
+
+if(!isset($_GET['patient_signup_addess_error']))
+$_GET['patient_signup_addess_error']=NULL;
+
+if(!isset($_GET['patient_signup_password_error']))
+$_GET['patient_signup_password_error']=NULL;
+
+if(!isset($_GET['hospital_signup_name_error']))
+$_GET['hospital_signup_name_error']=NULL;
+
+if(!isset($_GET['hospital_signup_address_error']))
+$_GET['hospital_signup_address_error']=NULL;
+
+if(!isset($_GET['hospital_signup_email_error']))
+$_GET['hospital_signup_email_error']=NULL;
+
+if(!isset($_GET['hospital_signup_contact_error']))
+$_GET['hospital_signup_contact_error']=NULL;
+
+if(!isset($_GET['hospital_signup_file_error']))
+$_GET['hospital_signup_file_error']=NULL;
+
+if(!isset($_GET['hospital_signup_password_error']))
+$_GET['hospital_signup_password_error']=NULL;
+
+if(!isset($_GET['admin_login_email_error']))
+$_GET['admin_login_email_error']=NULL;
+if(!isset($_GET['admin_login_password_error']))
+$_GET['admin_login_password_error']=NULL;
+
+if(!isset($_GET['patient_login_email_error']))
+$_GET['patient_login_email_error']=NULL;
+if(!isset($_GET['patient_login_password_error']))
+$_GET['patient_login_password_error']=NULL;
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- FOR NORMAL BOOTSTRAP -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!--FOR FONT AWESOME ICONS AND FONTS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--FOR BOOTSTRAP FORMS-->
-  <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/signin/">
-  <link href="https://getbootstrap.com/docs/3.4/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/3.4/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-  <script src="https://getbootstrap.com/docs/3.4/assets/js/ie-emulation-modes-warning.js"></script>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <title></title>
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/login.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<!-- FOR NORMAL BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--FOR FONT AWESOME ICONS AND FONTS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--FOR BOOTSTRAP FORMS-->
+<link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/signin/">
+<link href="https://getbootstrap.com/docs/3.4/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/3.4/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<script src="https://getbootstrap.com/docs/3.4/assets/js/ie-emulation-modes-warning.js"></script>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<title></title>
+<!--Owl Carousel-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+crossorigin="anonymous" />
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+crossorigin="anonymous" />
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/login.css">
+<link rel="stylesheet" href="CSS/owl.carousel.min.css">
+<link rel="stylesheet" href="CSS/owl.theme.default.min.css">
   <style media="screen">
     .hov a:hover {
       text-decoration: none;
@@ -94,6 +154,11 @@ $page="index.php";
   color: black;
   background-color: #8bcdcd;
 }
+.testimonial {
+      height: 200px;
+      width: 600px;
+
+    }
   </style>
 </head>
 
@@ -257,7 +322,7 @@ $page="index.php";
         $role=$_SESSION['role'];
         if($role==3){ ?>
         <nav>
-          <h1 class="brand"><a href="index.php" style="color: black"><span>M</span>ed<span>D</span>oc</a></h1>
+          <h1 class="brand"><a href="index.php" style="color: white"><span>M</span>ed<span>D</span>oc</a></h1>
           <ul>
             <li><a href="patient-page.php">Dashboard</a></li>
             <li><a href="#appointment">Make An Appointment</a></li>
@@ -279,7 +344,7 @@ $page="index.php";
         </nav>
         <?php } elseif($role==2){ ?>
   <nav>
-    <h1 class="brand"><a href="index.php" style="color: black"><span>M</span>ed<span>D</span>oc</a></h1>
+    <h1 class="brand"><a href="index.php" style="color: white"><span>M</span>ed<span>D</span>oc</a></h1>
     <ul>
       <li><a href="doctor-page.php">Dashboard</a></li>
       <li><a href="doctor-page.php">Appointment Requests</a></li>
@@ -396,7 +461,7 @@ $page="index.php";
         <img src="Images/medical-folder.png"><br><br><br>
         <div class="Doctor_login">
           <!-- Trigger the modal with a button -->
-          <a href="#"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Hospital Admin Login</button></a><br><br><br><br>
+          <a href="#"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModaFind">Hospital Admin Login</button></a><br><br><br><br>
           <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -438,7 +503,7 @@ $page="index.php";
         <img src="Images/patient_profile.png"><br><br><br>
         <div class="Patient_login">
           <!-- Trigger the modal with a button -->
-          <a href="#"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">Log In as Patient</button></a><br><br>
+          <a href="#"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalFind">Log In as Patient</button></a><br><br>
           <!-- Modal -->
           <div class="modal fade" id="myModal1" role="dialog">
             <div class="modal-dialog">
@@ -518,7 +583,57 @@ $page="index.php";
   <div class="container text-justify">
     <p style="font-size: 20px;">We provide the a wide range of medical services, so every person could have the opportunity to receive qualitative medical help.This is a Software Requirements Specification (SRS) for the Hospital Management System. It
       describes the functions, goals and tasks that the system can perform. This is used to describe the scope of the project and to plan for the system’s design and implementation.</p>
-  </div><br><br>
+  </div><br><br><br>
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
+        <!--<span class="subheading">Testimonials</span> -->
+        <h2 class="mb-4"><img src="Images/testimonial.png" height="60px" width="60px" alt="">&nbsp&nbsp Our Patients Says About
+          Us</h2>
+        <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary
+          regelialia. It is a paradisematic country</p>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="owl-carousel owl-theme">
+    <div class="container item testimonial">
+      <blockquote>
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+          globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+    </div>
+    <div class="container item testimonial">
+      <blockquote>
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+          globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+    </div>
+    <div class="container item testimonial">
+      <blockquote>
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+          globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+    </div>
+    <div class="container item testimonial">
+      <blockquote>
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+          globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+    </div>
+
+  </div>
+
   <section id="footer">
     <img src="Images/footer-img.png" class="footer-img">
     <div class="title-text">
@@ -582,6 +697,35 @@ function filterFunction() {
       changeIcon = true;
     }
   });
+  </script>
+  <!--Owl Carousel-->
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      nav: true,
+      dots: true,
+      margin: 10,
+      loop: true,
+      autoWidth: true,
+      items: 4
+
+    })
+  </script>
+  <script>
+    $('.counter-count').each(function () {
+      $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+      }, {
+
+        //chnage count up speed here
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+          $(this).text(Math.ceil(now));
+        }
+      });
+    });
   </script>
   <script src="https://getbootstrap.com/docs/3.4/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

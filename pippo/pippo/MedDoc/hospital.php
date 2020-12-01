@@ -15,6 +15,30 @@ $row = mysqli_fetch_array($result);
 if( isset($_SESSION['id']) && $_SESSION['role']==3){
   $_SESSION['hospitaldb']= $row['db_name'];
 }
+if(!isset($_GET['patient_signup_name_error']))
+$_GET['patient_signup_name_error']=NULL;
+if(!isset($_GET['patient_signup_email_error']))
+$_GET['patient_signup_email_error']=NULL;
+if(!isset($_GET['patient_signup_gender_error']))
+$_GET['patient_signup_gender_error']=NULL;
+if(!isset($_GET['patient_signup_dob_error']))
+$_GET['patient_signup_dob_error']=NULL;
+if(!isset($_GET['patient_signup_contact_error']))
+$_GET['patient_signup_contact_error']=NULL;
+if(!isset($_GET['patient_signup_addess_error']))
+$_GET['patient_signup_addess_error']=NULL;
+if(!isset($_GET['patient_signup_password_error']))
+$_GET['patient_signup_password_error']=NULL;
+
+if(!isset($_GET['doctor_login_contact_error']))
+$_GET['doctor_login_contact_error']=NULL;
+if(!isset($_GET['doctor_login_password_error']))
+$_GET['doctor_login_password_error']=NULL;
+
+if(!isset($_GET['patient_login_contact_error']))
+$_GET['patient_login_contact_error']=NULL;
+if(!isset($_GET['patient_login_password_error']))
+$_GET['patient_login_password_error']=NULL;
 ?> 
 <!DOCTYPE html>
 <html>
@@ -55,38 +79,55 @@ crossorigin="anonymous" />
 <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
 <style media="screen">
 .hov a:hover {
-  text-decoration: none;
-  color: white;
-}
-.colorcd {
-  height: 280px;
-  width: 180px;
-  background-color: #e7e7e7;
-  border-radius: 25px;
-}
-.colorcd:hover {
-  transform: scale(1.1);
-}
-.icona {
-  color: #8bcdcd;
-  font-size: 45px;
-}
-.counter {
-  text-align: center;
-}
-.counter-count {
-  font-size: 50px;
-  font-weight: bold;
-  position: relative;
-  color: #000000;
-  text-align: center;
-  display: inline-block;
-}
-.testimonial {
-  height: 200px;
-  width: 600px;
-  
-}
+      text-decoration: none;
+      color: white;
+    }
+
+    .colorcd {
+      height: 280px;
+      width: 180px;
+      background-color: #e7e7e7;
+      border-radius: 25px;
+    }
+
+    .colorcd:hover {
+      transform: scale(1.1);
+    }
+
+    .colordep {
+      height: 120px;
+      width: 70px;
+      background-color: #e7e7e7;
+      border-radius: 25px;
+    }
+
+    .colordep:hover {
+      transform: scale(1.1);
+    }
+
+    .icona {
+      color: #8bcdcd;
+      font-size: 45px;
+    }
+
+    .counter {
+      text-align: center;
+    }
+
+    .counter-count {
+      font-size: 50px;
+      font-weight: bold;
+      position: relative;
+      color: #000000;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .testimonial {
+      height: 200px;
+      width: 600px;
+
+    }
 </style>
 </head>
 
@@ -416,6 +457,67 @@ About your Health.</h2>
 </div>
 </div>
 <br><br><br><br>
+<br><br><br>
+  <div class="container text-center">
+    <div class="page-header resp">
+      <h2>Departments</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/child.png" height="60px" width="60px" alt="">
+        <h4>Pediatric</h4>
+      </div>
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/thinking.png" height="60px" width="60px" alt="">
+        <h4>Neurology</h4>
+      </div>
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/kidneys.png" height="60px" width="60px" alt="">
+        <h4>Urology</h4>
+      </div>
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/heart.png" height="60px" width="60px" alt="">
+        <h4>Cardiology</h4>
+      </div>
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/dental-checkup.png" height="60px" width="60px" alt="">
+        <h4>Dental</h4>
+      </div>
+      <div class="col-sm-1">&nbsp</div>
+    </div>
+    <br><br><br>
+    <div class="row">
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/lungs.png" height="60px" width="60px" alt="">
+        <h4>Pulmonary</h4>
+      </div>
+
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/knee.png" height="60px" width="60px" alt="">
+        <h4>Trauma</h4>
+      </div>
+
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/eye.png" height="60px" width="60px" alt="">
+        <h4>Eyes</h4>
+      </div>
+      <div class="col-sm-1">&nbsp</div>
+      <div class="col-sm-1 colordep">
+        <br><img src="Images/intestine.png" height="60px" width="60px" alt="">
+        <h4>Gastro</h4>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
 <div class="container">
 <div class="row">
 <!-- checking if about us info present -->
@@ -442,31 +544,6 @@ About your Health.</h2>
   </div><br><br><br><br><br><br>
   
   
-  <?php /* $tm=json_decode($row['testimonials']);
-  //var_dump($tm);
-  $i=1+(int)$tm->testimonialsnumber;
-  if($i!=0){ */ ?>
-    <!-- <div class="container">
-    <div class="row justify-content-center mb-5 pb-2">
-    <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
-    <span class="subheading">Testimonials</span>
-    <h2 class="mb-4"><img src="Images/testimonial.png" height="60px" width="60px" alt="">&nbsp&nbsp Our Patients Says About
-    Us</h2>
-    </div>
-    </div>
-    </div>
-    <br><br><br><br>
-    <div class="owl-carousel owl-theme"> -->
-    <?php /* while($i!=0){ $i--;  */?>
-     <!--  <div class="container item testimonial">
-      <blockquote>
-      <p><?php echo $tm->alltestimonials[$i]->source; ?></p>
-      <footer><?php echo $tm->alltestimonials[$i]->source; ?></footer>
-      </blockquote>
-      </div> -->
-      <?php //} ?>
-      <!-- </div> -->
-      <?php //} ?>
       
       <br><br>
       <section id="footer">
