@@ -1,0 +1,145 @@
+################ MEDDOC DOCUMENTATION #################
+#######################################################
+
+#################### Description ######################
+
+In this Hospital management system any hospital can register and they will get a website of their hospital data of which like departments of their hospital, data of doctors, data of patients they are having, their tagline and much more they can edit according to their needs. 
+Patients can search for the hospital from whose doctor they want an appointment and can select the symptoms they are suffering from. Those symptoms can be added Or removed accordingly by the hospital itself as the access has been given to them. 
+Doctors of particular hospital are having their accounts over the site of hospital so that they can check their appointment requests thier profile they can edit. 
+In a nutshell our system trying to provide a service with which the data of all the hospitals can be managed and patients are able to get appointment from whichever hospital they want without physically being present their.
+################### Project Directory ##################
+
+│   pippo.pptx
+│   pippo.txt
+│
+└───pippo
+    │   pippo.sql
+    │
+    └───MedDoc
+        │   admin-page.php
+        │   doctor-data.php
+        │   doctor-page.php
+        │   doctor-profile.php
+        │   editable-page.php
+        │   hospital.php
+        │   index.php
+        │   patient-data.php
+        │   patient-page.php
+        │   patient-profile.php
+        │   README.md
+        │
+        ├───CSS
+        │       login.css
+        │       owl.carousel.min.css
+        │       owl.theme.default.min.css
+        │       style.css
+        │
+        ├───Images
+        │       24-hours.png
+        │       admin-anatomy.jpg
+        │       admin-page1.jpg
+        │       admin-page2.jpg
+        │       admin-page3.jpg
+        │       administrator.jpg
+        │       ambulance.png
+        │       anatomy.jpg
+        │       background.jpg
+        │       close.png
+        │       digitally-equiped.jpg
+        │       doctor_profile.png
+        │       doctor_profile_S.png
+        │       footer-img.png
+        │       heart-fake.jpg
+        │       heart-study.jpg
+        │       Human-heart.jpg
+        │       logo.png
+        │       logo1.jpg
+        │       medical-folder.png
+        │       menu.png
+        │       patient_profile.png
+        │       patient_profile_S.png
+        │       skull.jpg
+        │       stethoscope.png
+        │       testimonial.png
+        │       user.png
+        │       versatility.jpg
+        │
+        ├───includes
+        │       common.php
+        │       header.php
+        │       logout.php
+        │
+        ├───js
+        │       owl.carousel.js
+        │       owl.carousel.min.js
+        │
+        ├───Login
+        │       add-a-doctor-script.php
+        │       admin-login-script.php
+        │       doctor-login-script.php
+        │       hospital-signup.php
+        │       patient-login-script.php
+        │       patient-signup-script.php
+        │
+        ├───scripts
+        │       add-about-us.php
+        │       add-counter-data.php
+        │       add-qualifications.php
+        │       add-social-links.php
+        │       add-tagline.php
+        │       add-testimonial.php
+        │       edit-patient-profile.php
+        │       request-appointment.php
+        │
+        └───storage
+                3TestHospital1.pdf
+                4TestHospital2.pdf
+
+################## Hosting on Localhost ################
+
+> Install latest version of wamp server from "https://wampserver-64bit.en.softonic.com/"
+> Clone folder 'MedDoc' present inside folder 'pippo' into "C:\wamp64\www"
+> Start wamp server from desktop icon and open localhost/phpmyadmin in browser
+> Enter username "root" and leave password blank and login
+> Create database "meddoc","3testhospital1","4testhospital2" and import sql file "pippo.mysql" present inside pippo folder
+> On the browser open localhost/MedDoc, and the project will be ready to run
+
+
+################## Sample Acounts ########################
+
+Test Hospital 1
+Admin: 	test1@gmail.com
+	111111
+Doctor: testdoc@gmail.com
+	1990-01-01
+
+Test Hospital 2
+Admin: 	test2@gmail.com
+	111111
+Doctor: testdoc2@gmail.com
+	1990-01-01
+
+Patient: 9876543210
+	     111111
+
+################## Video Link #########################
+
+https://drive.google.com/file/d/1TJy1Se_6PZxwMPhVA02VF0IGVVvU1OoE/view?usp=sharing
+
+###################### Our Team #######################
+
+> Paras Chaudhary
+  Email: paras1638.cse19@chitkara.edu.in
+
+> Aarchie Girdhar
+  Email: aarchie0235.cse19@chitkara.edu.in
+  
+> Divyanshi Bajpai
+  Email: divyanshi0278.cse19@chitkara.edu.in
+
+> Shaurya Kaushal
+  Email: shaurya0237.cse19@chitkara.edu.in 
+
+
+
+
