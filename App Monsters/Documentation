@@ -1,0 +1,46 @@
+
+Problem Statement :
+      In our day to day household life we all face problem when we feel uneasy or uncomfortable.
+      But is it neccessary that every time the user faces some issue or require advice , that are not serious , 
+      like somebody wants to get a normal fever medicine or someone wants to increase his/her stamina, he/she is
+      required to go to doctor? Well, though it is advisable to visit the doctor whenever possible, but as discussed 
+      above if due to unavailbility of specialist due to some reason, our HEALTHCARE APP can offer the alternative.
+      
+      
+Proposed solution :
+     Our proposed solution will be an app on which patient will first fill his/her details and then
+     he/she will tell about his/her problem. Also,the app will suggest the related medicines to the user.
+     Our app is the most easily accessible digital medium for patients to satisfy their healthcare needs instantly.
+    
+    
+    
+Implentation :
+     Firstly, the user will enter his/her information. Secondly, he/she will tell about his/her problem he/she is 
+     suffering from. When the user will select the problem the app will list the main medicines for that particular
+     problem. This will be implemented by fetching data from related api. Also, there is a screen from which the 
+     user can search any medicine and the app will give the detailed use for that respected medicine.
+     Also, there is a page in which there is option to calculate BMI of a person. By entering his/her gender,
+     height and weight the app will tell whether the person is normal,underweight or overweight.We can also
+     consult the doctor by calling or chatting 
+     Phone numbers of doctors are provided in the app.
+     
+     
+Technologies used :
+   1. Android - It's our platform where we are going to deploy our apps moreover Android gives us security that’s
+    there right out of the box and never stops working. It’s like a security guard that never takes a break, a 
+    nap or a holiday. It’s the operating system inside 2.5 billion active devices.
+    
+  2. Flutter - We are going to use flutter an open-source UI software development kit created by Google. 
+  It’ll help to develop application for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from 
+  a single codebase. So, we can implement our app on multiplatform if required.
+  
+  3. Firebase - Firebase is Google's mobile application development platform that helps you build, improve,
+  and grow your app. The Firebase Realtime Database is a cloud-hosted NoSQL database that lets you store and
+  sync data between your users in real-time. Cloud Firestore enables you to store, sync and query app data at global scale.
+  
+  
+  Till now we have not connected firebase to this project. It is in process .
+
+
+     
+     
