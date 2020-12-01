@@ -1,0 +1,21 @@
+Visualised Audio Book
+
+1. Project Description
+
+‌We made a player through which the user can select any pdf file they want and the player will convert that respective pdf file into mp3. We have added some important features which the user can access to adjust the volume and pause and play the mp3 file as per their needs. It will Provide Interactive learning and easier for student to understand through voice rather than reading.
+
+The positive and unique solution of our idea is that no such application has been created in which a person can convert pdf to mp3 and instantly hear it . It is good for student to use this application for listening purpose  
+
+
+2. Contents Of Our Project
+
+-> PDFtoMP3.py
+-> MP3 Player.py
+-> Project Pics(Folder)
+This whole project was made using PYTHON using TKINTER, pygame, os, gtts and more libriaries
+
+
+3. Ways To Host Our Project on Local Host
+
+1. Use XAMPP, or
+2. Use built in http.server in python
