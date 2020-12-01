@@ -171,8 +171,8 @@ crossorigin="anonymous" />
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
+          <h4 class="modal-title text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title text-center">Sign Up</h4>
         </div>
         <div class="modal-body text-center">
           <form class="form-signin" action="Login/patient-signup-script.php" method="POST">
@@ -218,8 +218,8 @@ crossorigin="anonymous" />
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title text-center">Sign Up</h4>
           </div>
           <div class="modal-body text-center">
             <form class="form-signin" action="Login/hospital-signup.php" method="POST" enctype="multipart/form-data">
@@ -259,8 +259,8 @@ crossorigin="anonymous" />
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header text-center">
+          <h4 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select the Hospital</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Select the Hospital</h4>
         </div>
         <div class="modal-body text-center">
           <img src="https://media.giphy.com/media/1gPxynPQZT8w9RJNM3/giphy.gif" height=200px width=250px>
@@ -461,7 +461,7 @@ crossorigin="anonymous" />
         <img src="Images/medical-folder.png"><br><br><br>
         <div class="Doctor_login">
           <!-- Trigger the modal with a button -->
-          <a href="#"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModaFind">Hospital Admin Login</button></a><br><br><br><br>
+          <a href="#"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalFind">Hospital Admin Login</button></a><br><br><br><br>
           <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">

@@ -179,12 +179,18 @@ $conn = mysqli_connect($servername, $serverusername, $serverpassword,$_SESSION['
           </div>
         </div> -->
         <br><br>
+        <?php if(isset($_GET['values'])){ $array=$_GET['values'];$array=json_decode($array); ?>
+                <div style="font-size: 18px;">
+                <span class="container" style="font-size: 18px; font-weight: 600; color: red"><h1>Selected Symptoms</h1></span><br><?php echo($array->symptoms); ?>
+              <?php } else{ ?>
+                </div>
         <strong><h2 style="color: #8bcdcd">SELECT YOUR SYMPTOMS</h2></strong>
         <div class="row" style="font-size: 20px; margin-left: -41.5rem;">
           <div class="col-sm-8">
             <div class="container-fluid h-100 bg-light text-dark">
               <br>
-              <form action="#" method="POST">
+              
+              <form action="scripts/suggest-doctors.php" method="POST">
               <div class="row justify-content-center align-items-center h-100">
                   <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
                       <div class="form-group">
@@ -203,19 +209,39 @@ $conn = mysqli_connect($servername, $serverusername, $serverpassword,$_SESSION['
                       </div> 
                  </div>
               </div>
-              
               </form>
           </div>
           </div>
         </div>
-        <br><br><br><br><br>
+        
+        <?php } ?>
+        <br><br><br><br>
         <!-- <div class="row" style="font-size: 20px;">
           <div class="col-sm-4"><label for="message"><p>Any other problem or symptoms you are facing :</p></label></div>
           <div class="col-sm-8">
             <input type="text" class="form-control" name="message">
           </div>
         </div><br><br><br> -->
-        <form action="#" method="post">
+        <?php if(isset($array)){ ?>
+        <form action="scripts/request-appointment.php" method="post">
+          
+        <input type="text" name="symptoms" value="<?php echo $array->symptoms; ?>" style="display:none;">
+        <h1 style="font-size: 24px; font-weight: 600; color: black"><span style="color: #8bcdcd">S</span>uggested <span style="color: #8bcdcd">D</span>octors(Doctor Name---Department)</h1><br>
+        <div class="row">
+          <div class="col-sm-4"><label for="datetime"><p>Select the Doctor :</p></label></div>
+          <div class="col-sm-8">
+          <select name="doctor" style="width: 400px; padding: 1rem; font-size: 1.7rem" class="form-control">
+        <?php 
+        $i=0;
+            while(isset($array->$i)){ 
+              echo "<option value='".$array->$i->doctor_id."'>".$array->$i->name."---".$array->$i->department."</option>";
+              $i++;}
+          ?>
+        </select>
+          </div>
+        </div>
+        
+        <br><br><br>
         <div class="row" style="font-size: 20px;">
           <div class="col-sm-4"><label for="datetime"><p>You want to schedule your appointment on :</p></label></div>
           <div class="col-sm-8">
@@ -231,40 +257,55 @@ $conn = mysqli_connect($servername, $serverusername, $serverpassword,$_SESSION['
         <div class="container text-center" style="font-size: 20px;">
           <button type="submit" class="btn btn-info btn-lg" style="font-size: 20px; background-color: #8bcdcd;">Make Appointment</button>
         </div>
-                              </form>
+        </form>
+        <?php } ?>
         <br><br><br><br><br><br><br><br><br><br>
         <section id="status">
           <div class="container text-center">
+            <?php
+            $id=$_SESSION['id'];
+            $hospital_db=$_SESSION['hospital'];
+            
+            $query="SELECT * FROM patient_requests WHERE patient_id=$id ORDER BY request_id DESC;";
+            $query_result=mysqli_query($con,$query);
+            $query_rows=mysqli_num_rows($query_result);
+
+            if($query_rows>0) {
+              $conn=new mysqli($servername,$serverusername,$serverpassword,$hospital_db);
+            ?>
             <h1 class="heading"><span style="color: #8bcdcd">A</span>ppointment <span style="color: #8bcdcd">S</span>tatus</h1>
             <br><br><br><br><br><br>
             <table class="table table-hover" width=100%>
               <tbody>
+                <?php
+                while($query_rows--){
+                  $row=mysqli_fetch_array($query_result); 
+                  $request_id=$row['request_id'];
+                  $query="SELECT d.name,ds.department FROM appointment_requests ar INNER JOIN doctors d ON ar.doctor_id=d.id INNER JOIN departments ds ON d.department_id=ds.id WHERE ar.id=$request_id;";
+                  $query_result2=mysqli_query($conn,$query) or die(mysqli_error($conn));
+                  $row2=mysqli_fetch_array($query_result2);
+                ?>      
                 <tr>
-                  <td class="field"> <strong>Appointment Date : </strong> </td>
-                  <td class="data">&nbsp</td>
-                </tr>
-                <tr>
-                  <td class="field"> <strong>Appointmetn Timings : </strong> </td>
-                  <td class="data">&nbsp</td>
+                  <td class="field"> <strong>Appointment Date and Time: </strong> </td>
+                  <td class="data"><?php echo $row['datetime_of_appointment']; ?></td>
                 </tr>
                 <tr>
                   <td class="field"> <strong>Department : </strong> </td>
-                  <td class="data">&nbsp</td>
+                  <td class="data"><?php echo $row2['department']; ?></td>
                 </tr>
                 <tr>
                   <td class="field"> <strong>Doctor's Name : </strong> </td>
-                  <td class="data">&nbsp</td>
-                </tr>
-                <tr>
-                  <td class="field"> <strong>Appointment medium : </strong> </td>
-                  <td class="data">&nbsp</td>
+                  <td class="data"><?php echo $row2['name']; ?></td>
                 </tr>
                 <tr>
                   <td class="field"> <strong>Appointment Status : </strong> </td>
-                  <td class="data">&nbsp</td>
+                  <td class="data"><?php echo $row['status']; ?></td>
                 </tr>
+                <tr height="50"></tr>
+                <?php } ?>
               </tbody>
             </table>
+                <?php } ?>
             <br><br><br><br>
           </div>
         </section>

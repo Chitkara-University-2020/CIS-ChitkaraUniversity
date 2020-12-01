@@ -19,6 +19,7 @@ if ($query_rows != 0)
         $_SESSION['email'] = $email;
         $_SESSION['id'] = $row['id'];
         $_SESSION['role']=2;
+        $_SESSION['hospital']=$_POST['hospdbname'];
         header('location: ../doctor-page.php');
     }
     else header("location: ../hospital.php?hospital=".$_POST['hospname']."&password_error=Incorrect Password");

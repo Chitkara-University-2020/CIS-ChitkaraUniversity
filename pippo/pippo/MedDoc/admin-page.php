@@ -165,7 +165,7 @@ $conn=new mysqli($servername,$serverusername,$serverpassword,$_SESSION['hospital
       <ul class="dropdown-menu">
         <li> <a href="patient-data.php">Patients Data</a></li>
         <li> <a href="doctor-data.php" style="color: black">Doctors Data</a></li>
-        <li> <a href="editable-page.php">Your Home Page</a></li>
+        <li> <a href="editable-page.php">Edit Your Home Page</a></li>
       </ul>
     </li>
     <li class="dropdown">

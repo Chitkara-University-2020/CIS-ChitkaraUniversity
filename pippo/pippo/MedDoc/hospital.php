@@ -139,8 +139,8 @@ crossorigin="anonymous" />
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title text-center">Sign Up</h4>
           </div>
           <div class="modal-body text-center">
             <form class="form-signin" action="Login/hospital-signup.php" method="POST" enctype="multipart/form-data">
@@ -276,11 +276,9 @@ crossorigin="anonymous" />
 <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
 <input type="text" name="hospname" value="<?php echo $hospital; ?>" style="display:none;">
 <input type="text" name="hospdbname" value="<?php echo $row['db_name']; ?>" style="display:none;">
-<div class="checkbox">
-<label>
-<input type="checkbox" value="remember-me"> Remember me
-</label>
-</div>
+<br>
+<center>Default password is D.O.B(yyyy-mm-dd)</center>
+<br>
 <button class="btn btn-lg btn-info btn-block" type="submit">Sign in</button>
 </form>
 <br><br>
@@ -338,7 +336,7 @@ crossorigin="anonymous" />
 <nav>
 <h1 class="brand"><a href="index.php"><span>M</span>ed<span>D</span>oc</a></h1>
 <ul>
-<li><a href="#">Departments</a></li>
+<li><a href="#departments">Departments</a></li>
 <li><a href="patient-page.php">Make An Appointment</a></li>
 <?php if(!isset($_SESSION['id'])) { ?>
 <li class="dropdown">
@@ -376,7 +374,7 @@ crossorigin="anonymous" />
 <br><br>
 <div class="banner-btn">
 <a href="patient-page.php"><span></span>Make an Appointment</a>
-<a href="#"><span></span>Departments</a>
+<a href="#departments"><span></span>Departments</a>
 </div>
 </div>
 </header>
@@ -458,7 +456,7 @@ About your Health.</h2>
 </div>
 <br><br><br><br>
 <br><br><br>
-  <div class="container text-center">
+  <div class="container text-center" id="departments">
     <div class="page-header resp">
       <h2>Departments</h2>
     </div>

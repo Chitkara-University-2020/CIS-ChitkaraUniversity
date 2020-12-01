@@ -130,36 +130,40 @@ header('location: patient-page.php');}
                 </tr>
               </thead>
               <tbody>
+                <?php 
+                $id=$_SESSION['id'];
+                $hospital_db=$_SESSION['hospital'];
+                $conn=new mysqli($servername,$serverusername,$serverpassword,$hospital_db);
+                $query="SELECT * FROM appointment_requests WHERE doctor_id=$id;";
+                $query_result=mysqli_query($conn,$query);
+                $query_rows=mysqli_num_rows($query_result);
+                while($query_rows--){
+                $row=mysqli_fetch_array($query_result);
+                $id=$row['patient_id'];
+                $query="SELECT name,gender,contact FROM patients WHERE id=$id;";
+                $query_result2=mysqli_query($con,$query);
+                $row2=mysqli_fetch_array($query_result2);
+                ?>
                 <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td><button type="button" class="btn btn-success">Approve</button>&nbsp;&nbsp;<button type="button" class="btn btn-danger">Decline</button></td>
+                  <td><?php echo $row2['name']; ?></td>
+                  <td><?php echo $row2['gender']; ?></td>
+                  <td><?php echo $row['age']; ?></td>
+                  <td><?php echo $row['symptoms']; ?></td>
+                  <td><?php echo $row2['contact']; ?></td>
+                  <td><?php echo $row['message']; ?></td>
+                  <td><?php echo $row['datetime_of_appointment']; ?></td>
+                <td><?php if($row['status']=='pending'){ ?>
+                  <form action="scripts/approve_request.php" method="POST">
+                  <input type="text" value="<?php echo $row['id'] ?>" name="request_id" style="display:none;">
+                  <button type="submit" class="btn btn-success">Approve</button>
+                  </form>
+                  &nbsp;&nbsp;
+                  <form method="post" action="scripts/decline_request.php">
+                  <input type="text" value="<?php echo $row['id'] ?>" name="request_id" style="display:none;">
+                    <button type="submit" class="btn btn-danger">Decline</button><?php } else echo $row['status']; ?></td>
+                  </form>
                 </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td><button type="button" class="btn btn-success">Approve</button>&nbsp;&nbsp;<button type="button" class="btn btn-danger">Decline</button></td>
-                </tr>
-                <tr>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td>&nbsp</td>
-                  <td><button type="button" class="btn btn-success">Approve</button>&nbsp;&nbsp;<button type="button" class="btn btn-danger">Decline</button></td>
-                </tr>
+                <?php } ?>
               </tbody>
             </table>
           </div>

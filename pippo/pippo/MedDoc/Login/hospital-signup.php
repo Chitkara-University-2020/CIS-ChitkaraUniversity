@@ -250,7 +250,7 @@ if(strlen($contact)==10)
                         `symptoms` varchar(255) DEFAULT NULL,
                         `message` varchar(255) DEFAULT NULL,
                         `datetime_of_appointment` varchar(255) DEFAULT NULL,
-                        `request_timestamp` timestamp NULL DEFAULT NULL,
+                        `request_timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
                         `status` ENUM('pending','approved','declined') DEFAULT 'pending',
                         PRIMARY KEY (`id`),
                         KEY `patient_id` (`patient_id`),
