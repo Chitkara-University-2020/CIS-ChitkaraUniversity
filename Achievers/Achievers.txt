@@ -1,0 +1,19 @@
+DESCRIPTION OF THE PROJECT-
+Our team created a prototype for  patient-centred information exchange system.
+The system is designed to give patients and their healthcare providers secure access to health information.
+Patients can electronically access all their health treatments and their details using monitored dashboards provided by the hospital. 
+In order to demonstrate this,we created a small website for a particular hospital at a particular
+location to manage the communication of the patients of that hospital to the doctors.In this website
+you need to make an account and after login it will ask patient about his disease or problem and
+accordingly make an appointment which the patient can see in his dashboard. In Dashboard all 
+the information regarding the patient will be saved or uploaded by the hospital staff. We will
+give the right to the authority of hospital staff for editing and uploading the information. Except
+hospital staff nobody can edit the information. By doing so, the patients will not only get all the information about their appointment but it(website) will also decrease the rate of spreading infections
+due to any virus in future.Moreover with this solution the hospital staff can also prescribed medicines to their patients if they will suffering from minor infection or fever.
+
+CONTENTS OF OUR PROJECT DIRECTORY-
+Our Project is a website created HTML5, CSS,Javascript and Bootstrap.
+
+WAYS TO HOST YOUR PROJECT ON THE LOCALHOST-
+Our project is available on github.Following is the link to the repository:
+https://github.com/Sanjana001/Hospital_communication
